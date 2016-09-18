@@ -28,7 +28,7 @@ class ButtonClicksController < ApplicationController
 
     respond_to do |format|
       if @button_click.save
-        format.html { redirect_to @button_click, notice: 'Button click was successfully created.' }
+        format.html { redirect_to :new_button_click, notice: 'Button click was successfully created.' }
         format.json { render :show, status: :created, location: @button_click }
       else
         format.html { render :new }
