@@ -1,0 +1,1 @@
+json.array! @button_clicks, partial: 'button_clicks/button_click', as: :button_click
